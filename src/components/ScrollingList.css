@@ -1,0 +1,25 @@
+.scrolling-container {
+    width: 100%; /* Set to the width you want for your container */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Ensures list items line up horizontally */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 4px 10px -6px gray; /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+    margin-top: 5rem;
+  }
+  
+  .scrolling-list {
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Aligns the list to the container */
+    display: flex; /* Aligns list items in a row */
+    align-items: center; /* Centers items vertically */
+    list-style-type: none; /* Removes default list styling */
+  }
+  
+  .scrolling-list li {
+    display: inline-block; /* Displays items inline */
+    padding: 10px 20px; /* Adds space around items */
+    margin-right: 10px; /* Adds space between items */
+    /* Additional styles such as colors and fonts can be added */
+  }
+  

@@ -1,0 +1,16 @@
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0; /* Grey background */
+    border-radius: 10px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensures the inner bar does not overflow the rounded corners */
+    margin-top: .4rem;
+}
+
+.progress-bar {
+    height: 13px;
+    line-height: 13px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 210, 218, 0.5) 0%, #F95192 100%);
+    border-radius: 10px; /* Rounded corners for the filled part */
+}
