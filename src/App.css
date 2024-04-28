@@ -74,6 +74,10 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark .dropdown-menu{
+  background-color: #333;
+}
+
 .pink{
   color: #F95192;
 
