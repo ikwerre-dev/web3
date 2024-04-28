@@ -1,6 +1,10 @@
 .showcase_searchbar .menulist{
     display: flex;
-    gap: 1.52rem;    
+    gap: 1.16rem;    
+}
+
+.showcase_searchbar{
+    
 }
 
 .shadow-custom{
@@ -15,6 +19,7 @@
 background: #000;
 box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 border-radius: 2px;
+
 /* font-size: .9rem; */
 }
 
@@ -44,3 +49,9 @@ border-radius: 2px;
     color:#6B7280
 }
 
+.showcase_card {
+    height: 28rem; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly */
+}

@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.dark {
+    background-color: #000!important;
+}
+.dark .banner_card{
+    background-color: #1C1C1E    ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p {
+  color: #fff; /* Light grey text color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark .text-m{
+  color: #6B7280!important;
+}
+.dark .btn-transparent{
+  color: white;
+  background-color: transparent;
+  border: none;
+  text-underline-offset: .2rem;
+  
+}
+.dark .scrolling-container{
+  background-color: #1C1C1E!important;
+  box-shadow: none!important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.dark .text-main-dark{
+  color: white!important;
+}
+.dark .shadow-custom, .dark input{
+  background-color: #1C1C1E;
+  color: #9CA3AF;
+  border-radius: .3rem;
+  border: none;
+}
+.dark .showcase_searchbar input::placeholder{
+  color: #9CA3AF!important;
+}
+
+.dark .nav li a{
+  color: white!important;
+  font-weight: 300;
+}
+.moon, .sun{
+  margin-right: .5rem;
+}
+ 
+
+.dark .showcase_card{
+  background-color: #1C1C1E;
+  border-radius: .4rem;
+}
+
+.dark .footer p{
+  color: white!important;
+}
+
+.dark .twitter{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pink{
+  color: #F95192;
+
+}
+
+li{
+  list-style: none!important;
 }

@@ -8,7 +8,7 @@ function showcase() {
     return (
         <div className="showcase  mt-3">
             <div className='row'>
-                <div className='col-10 offset-1'>
+                <div className='col-11'>
                     <Showcase_searchbar />
                     <Showcase_grid />
                 </div>

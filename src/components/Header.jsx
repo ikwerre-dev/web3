@@ -1,14 +1,16 @@
 import React from 'react';
 import './Header.css';
+import ModeSwitcher from './ModeSwitcher'; // adjust the path according to your file structure
 import logo from '../assets/logo.png';
 import { SunDim } from 'lucide-react';
+import HeaderButton from './HeaderButton';
 
 function Header() {
     return (
         <header>
             <div className='first-header-part'>
             <div className='logo'>
-                <img src={logo} alt='Logo' />
+                <a href="/"><img src={logo} alt='Logo' /></a>
             </div>
 
             <div className='search-bar'>
@@ -33,19 +35,8 @@ function Header() {
                             Support
                         </a>
                     </li>
-                    <li className='mode-switcher'>
-                        <a href='javascript:void(0)'
-                        >
-                         <SunDim color="#F95192" size={23} />
-
-                            Light Mode
-                        </a>
-                    </li>
-                    <li className='header-btn'>
-                        <button className='btn btn-main'>
-                            Connect Wallet
-                        </button>
-                    </li>
+                    <ModeSwitcher />
+                    <HeaderButton />
                 </ul>
             </div>
         </header>

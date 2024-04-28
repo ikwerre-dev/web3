@@ -1,0 +1,23 @@
+.details .scrolling-container {
+    width: 100%;
+    /* Set to the width you want for your container */
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    white-space: nowrap;
+    /* Ensures list items line up horizontally */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 4px 10px -6px gray;
+    /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+    margin-top: 1rem !important;
+    background-color: white;
+}
+
+.details {
+    background-color: #E5E7EB;
+}
+
+.dark .details {
+    background-color: #000;
+
+}

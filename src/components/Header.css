@@ -3,7 +3,7 @@ header {
     justify-content: space-around;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    margin-top: 1rem;
+    padding-top: 1.5rem;
 
 }
 
@@ -57,11 +57,12 @@ header {
 
 .btn-plain{
     border-radius: 2px;
-    background: white;
+    background: transparent;
     color: black;
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 2px;
     text-decoration: underline!Important;
+    text-underline-offset: .1rem;
 
 }
 
@@ -87,3 +88,21 @@ header {
     font-weight: bold!important;
 }
 
+
+.pink{
+    color: #F95192;
+}
+
+.connected-box {
+    text-align: right;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.dropdown-item:hover{
+    background-color: #F95192;
+    color: white;
+}

@@ -1,0 +1,38 @@
+.footer p{
+    font-size: .75rem;
+}
+
+.footer{
+    margin-top: 7rem;
+    border-top: .5px solid #ccc;
+}
+
+.footer hr{
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-style: dashed;
+    margin-top: 2rem;
+}
+
+.footer .top-part{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer .bottom-part{
+    margin-top: 4rem;
+}
+
+.flags{
+    margin-top: .5rem;
+}
+
+.flags img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer ul li span{
+    font-size: .9rem;
+}

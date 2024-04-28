@@ -1,18 +1,21 @@
 import React from 'react';
-import Header from './components/Header';  // Adjust path if necessary
-import Banner from './components/Banner';  // Adjust path if necessary
-import Showcase from './components/Showcase';  // Adjust path if necessary
-import ScrollingList from './components/scrollingList';  // Adjust path if necessary
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+import Home from './components/pages/home';  // Adjust path if necessary
+import Details from './components/pages/details';  // Adjust path if necessary
+import NotFound from './components/pages/NotFound';  // Assuming you created this component
+
 function App() {
   return (
-    <div>
-      <Header />
-      <Banner />
-      <ScrollingList />
-
-      <Showcase />
-      { }
-    </div>
+    <Router>
+      <div id='main-body'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/details/:id" element={<Details />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

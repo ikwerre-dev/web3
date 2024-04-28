@@ -24,7 +24,7 @@ function Banner_card() {
       </div>
       <div className='mt-4'>
         <h4>IranMan [ticker: IRAN]</h4>
-        <p className='text-muted'>Market cap : 34.4K</p>
+        <p className='text-muted text-m'>Market cap : 34.4K</p>
       </div>
       <p className='mt-2 fs-6 mb-0'>
       Soft/Hard
@@ -43,7 +43,7 @@ function Banner_card() {
             </div>
         </div>
         <div className='col-3'>
-            <button className='btn btn-main mt-1 btn-sm'>View</button>
+            <a href='details/1' className='btn btn-main mt-1 btn-sm'>View</a>
         </div>
     </div>
     </div>

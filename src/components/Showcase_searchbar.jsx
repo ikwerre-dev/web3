@@ -4,7 +4,7 @@ import { List, Grid2X2, } from 'lucide-react';
 
 const showcase_searchbar = () => {
     return (
-        <div className="row mt-5 showcase_searchbar">
+        <div className="row mt-5 showcase_searchbar offset-1">
             <div className='col-sm-5'>
                 <input className='form-control shadow-custom' placeholder='Type token symbol, address to find your launchpad' />
             </div>
