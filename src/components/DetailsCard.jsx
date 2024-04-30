@@ -58,9 +58,9 @@ function DetailsCard({ id }) {
                         <div className='mb-0 mt-2'>
                             <p>{details.bondCurveInfo.marketCapMessage}</p>
                             <p>
-                                TELEGRAM: <a href={details.bondCurveInfo.telegramLink}>{details.bondCurveInfo.telegramLink}</a>
+                                TELEGRAM: <a href={details.bondCurveInfo.telegramLink} className='text-main-muted'>{details.bondCurveInfo.telegramLink}</a>
                                 <br />
-                                TWITTER: <a href={details.bondCurveInfo.twitterLink}>{details.bondCurveInfo.twitterLink}</a>
+                                TWITTER: <a href={details.bondCurveInfo.twitterLink} className='text-main-muted'>{details.bondCurveInfo.twitterLink}</a>
                             </p>
                         </div>
                     </div>

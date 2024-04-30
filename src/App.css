@@ -61,10 +61,15 @@
   border: none !important;
 }
 .dark .discussion-tab textarea{
-border: 1.5px #9CA3AF solid ;
+border: 1.5px #9CA3AF solid !important;
 color: #9CA3AF;
 
 }
+.dark .discussion-tab textarea:focus{
+  outline: none;
+}
+
+
 .dark .showcase_searchbar input::placeholder, .dark input::placeholder, .dark textarea::placeholder{
   color: #9CA3AF!important;
 }
