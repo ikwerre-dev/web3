@@ -55,10 +55,10 @@
 
 
 .dark .shadow-custom, .dark input, .dark textarea, .dark select{
-  background-color: #1C1C1E;
-  color: #9CA3AF;
+  background-color: #1C1C1E!important;
+  color: #9CA3AF!important;
   border-radius: .3rem;
-  border: none;
+  border: none !important;
 }
 .dark .discussion-tab textarea{
 border: 1.5px #9CA3AF solid ;
