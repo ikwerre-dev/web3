@@ -1,0 +1,68 @@
+.profile-modal {
+    position: fixed; /* Fixed position to stay in place */
+    top: 0; /* Full screen from top */
+    left: 0; /* Full screen from left */
+    right: 0; /* Full screen from right */
+    bottom: 0; /* Full screen from bottom */
+    display: flex; /* Flexbox to help center the content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1050; /* High z-index to keep the modal above other content */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* Modals are typically not full-width */
+    max-width: 500px; /* Maximum width of the modal */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Space below the profile picture area */
+}
+
+.btn.btn-white {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc; /* Subtle border for the button */
+    display: flex;
+    align-items: center; /* Align icon and text inside the button */
+    justify-content: center;
+}
+
+.connected-wallet {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Space above the wallet info */
+    color: #555; /* Darker text color for better readability */
+    font-size: 16px; /* Larger font si ze for important wallet info */
+    background-color: #0000001A;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    border-radius: .5rem;
+}
+
+
+.profile-pic{
+    background-color: #F95192;
+    width: 5rem;
+    height: 5rem;
+    border-radius: .5rem;
+    color: white;
+}
+.profile-modal p{
+    margin-top: .5rem!important;
+    font-weight: bolder;
+}
+
+.underline{
+    text-decoration: underline;
+    
+}

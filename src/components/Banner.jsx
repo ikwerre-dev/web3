@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import Banner_card from './Banner_card';  // Adjust path if necessary
+import Banner_card from './Banner_card';   
 import HeaderButton from './HeaderButton';
 
 

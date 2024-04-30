@@ -1,0 +1,23 @@
+label{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+input{
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+    width: 26rem;
+    padding: .5rem;
+    outline: none;
+    font-size: 14px;
+}
+
+.textarea-lg{
+    height: 12.5rem!important;
+    resize: none;
+}
+
+input::placeholder{
+    font-size: 14px;
+    
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Showcase.css';
-import Showcase_searchbar from './Showcase_searchbar';  // Adjust path if necessary
-import Showcase_grid from './Showcase_grid';  // Adjust path if necessary
+import Showcase_searchbar from './Showcase_searchbar';   
+import Showcase_grid from './Showcase_grid';   
 
 
 function showcase() {

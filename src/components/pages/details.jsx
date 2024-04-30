@@ -1,22 +1,30 @@
 import React from 'react';
 import '../../App.css'
 import '../Details.css'
-import Header from '../Header';  // Adjust path if necessary
-import Banner from '../Banner';  // Adjust path if necessary
-import Showcase from '../Showcase';  // Adjust path if necessary
-import ScrollingList from '../scrollingList';  // Adjust path if necessary
-import Footer from '../Footer';  // Adjust path if necessary
+import Header from '../Header';   
+import Banner from '../Banner';   
+import Showcase from '../Showcase';   
+import ScrollingList from '../scrollingList';   
+import Footer from '../Footer';   
 import TradingViewWidget from '../TradingViewWidget';
+import ViewTokenLeft from '../ViewTokenLeft';
+import DetailsCard from '../DetailsCard';
+import { useParams } from 'react-router-dom';
+
 function Details() {
+  let { id } = useParams();
+
   return (
     <div  className='details'>
       <Header />
       <ScrollingList />
       <div className="row p-5">
-        <div className="col-sm-7" s>
+        <div className="col-sm-8">
         <TradingViewWidget/>
+        <ViewTokenLeft id={id} />
         </div>
-        <div className="col-5">
+        <div className="col-4">
+          <DetailsCard id={id}  />
 
         </div>
       </div>

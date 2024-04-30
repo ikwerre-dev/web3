@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-import Home from './components/pages/home';  // Adjust path if necessary
-import Details from './components/pages/details';  // Adjust path if necessary
+import Home from './components/pages/home';   
+import Details from './components/pages/details';   
 import NotFound from './components/pages/NotFound';  // Assuming you created this component
+import CreateToken from './components/pages/createToken';  // Assuming you created this component
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/details/:id" element={<Details />} />
+          <Route path="/createtoken" element={<CreateToken />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

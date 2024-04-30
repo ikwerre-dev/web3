@@ -1,0 +1,26 @@
+.comment h5{
+    color: #000;
+    font-size: .9rem;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.comment .time{
+    color: #00000080;
+    font-size: .7rem;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+
+.comment p{
+    color: black;
+    font-size: .9rem;
+    margin: 0;
+}
+.likecount, .reply{
+    color: #00000080;
+    font-size: .8rem;
+    padding-top: .4rem;
+    margin: 0;
+}

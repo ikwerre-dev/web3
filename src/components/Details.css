@@ -7,7 +7,7 @@
     /* Ensures list items line up horizontally */
     padding-left: 2rem;
     padding-right: 2rem;
-    box-shadow: 0 4px 10px -6px gray;
+    box-shadow: none;
     /* Horizontal offset, vertical offset, blur radius, spread radius, color */
     margin-top: 1rem !important;
     background-color: white;
@@ -17,7 +17,44 @@
     background-color: #E5E7EB;
 }
 
+.banner-addon{
+    position: fix;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: -5.8rem;
+    margin-left: -1rem;
+}
+
 .dark .details {
     background-color: #000;
+
+}
+
+.viewtoken,
+.viewtoken .nav {
+    background-color: white;
+    border: solid transparent;
+
+}
+
+
+
+.nav-link {
+    border: none;
+    font-size: .9rem;
+    color: #bbb;
+    font-weight: normal;
+}
+
+.viewtoken .card-header {
+    background-color: white;
+    border-bottom: dashed #ddd;
+}
+
+
+.viewtoken .active {
+    border: none;
+    color: #E5E7EB;
+    font-weight: 500;
 
 }
