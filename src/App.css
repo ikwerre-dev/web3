@@ -166,7 +166,21 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-color: #2196F3;
 }
 
+.dark .bordered{
+border: 1.5px #9CA3AF solid !important;
+
+}
+
+.dark .btn-main:hover{
+  background-color: #f951919d;
+  color: rgba(255, 255, 255, 0.781);
+}
 
 li{
   list-style: none!important;
+}
+
+.fw-8{
+  font-size: .7rem!important;
+  font-weight: 600;
 }

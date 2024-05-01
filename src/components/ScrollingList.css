@@ -23,3 +23,36 @@
     /* Additional styles such as colors and fonts can be added */
   }
   
+  .scrolling-container {
+    width: 100%; /* Set the width as needed */
+    overflow: hidden; /* Hide anything that goes out of the container */
+    position: relative;
+  }
+  
+  .scrolling-list {
+    display: flex;
+    animation: scroll-left 20s linear infinite; /* Adjust timing as needed */
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .scrolling-container:hover .scrolling-list {
+    animation-play-state: paused; /* Pauses the animation on hover */
+  }
+  .fixed {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    background: #F95192;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    color: ;
+  }
+   

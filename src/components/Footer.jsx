@@ -12,17 +12,13 @@ import ModeSwitcher from './ModeSwitcher';
 function Footer() {
     return (
         <div className='footer'>
+          
             <div className="top-part">
-                <p className="text-center col-sm-10 offset-1 text-muted mt-5">
-                    Disclaimer:  will never endorse or encourage that you invest in any of the projects listed and therefore, accept no liability for any loss occasioned. It is the user(s) responsibility
-                    to do their own research and seek financial advice from a professional. More information about (DYOR) can be found via Binance Academy.
-                </p>
-            </div>
-            <hr />
-            <div className="bottom-part">
                 <div className="row offset-1">
                     <div className="col-sm-3">
-                        <h6 className='fw-bold'>LOGO</h6>
+                        <h6 className='fw-bold'>
+                            <img src={logo} alt="" className="logo" />
+                        </h6>
                     </div>
                     <div className="col-sm-3">
                         <h6 className=''>LANGUAGE</h6>
@@ -49,6 +45,9 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div className="bottom-part">
+                <p className="text-center">© 2024 by Dittopad</p>
             </div>
         </div>
     );

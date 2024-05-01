@@ -1,24 +1,25 @@
 import React from 'react';
-import './ScrollingList.css'; // Assuming you have a CSS file for styles
+import './ScrollingList.css';
 import { Zap } from 'lucide-react';
 
-const ScrollingList = () => {
+const ScrollingList = ({ items }) => {
   return (
     <div className="scrolling-container">
+      <li className='fixed'>
+        <span className='text-light text-main-light'>
+          <Zap color="gold" size={18} />
+          <span className='mx-1'>Trending</span>
+        </span>
+      </li>
       <ul className="scrolling-list">
-        <li className='fixed'><span className='text-dark text-main-dark'><Zap color="gold" size={18} /><span className='mx-1'>Trending</span></span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-        <li><span className='text-dark text-main-dark'>#1</span> <span className='text-main'>MEOW</span></li>
-      
+        {items.map((item, index) => (
+          <li key={item.id} className='cursor-pointer' style={{ whiteSpace: 'nowrap' }}>
+            <a href={`/details/${item.id}`}>
+              <span className='text-dark text-main-dark mx-1'>#{index + 1}</span>
+              <span className='text-main'>{item.name}</span>
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

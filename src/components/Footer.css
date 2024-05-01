@@ -5,6 +5,7 @@
 .footer{
     margin-top: 7rem;
     border-top: .5px solid #ccc;
+    padding-bottom: 2rem;
 }
 
 .footer hr{
@@ -15,13 +16,18 @@
     margin-top: 2rem;
 }
 
+.footer .logo{
+    width: 5rem!important;
+    /* height: 6rem; */
+    margin-top: 0;
+}
 .footer .top-part{
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
 .footer .bottom-part{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .flags{

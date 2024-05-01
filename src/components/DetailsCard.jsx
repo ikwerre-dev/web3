@@ -42,7 +42,7 @@ function DetailsCard({ id }) {
                             <a href='#' className='btn btn-secondary mt-1 btn-sm'>{details.projectDetails.sellLabel}</a>
                         </div>
                     </div>
-                    <input type="number" name="" className='mt-2 form-control' id="" />
+                    <input type="number" name="" className='mt-2 form-control bordered' id="" />
                     <div className="col-6 mb-2">
                         <a href='/createtoken' className='btn btn-main mt-3 btn-lg'>{details.projectDetails.tradeButtonLabel}</a>
                     </div>
