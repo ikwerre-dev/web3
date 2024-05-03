@@ -27,6 +27,7 @@ const showcaseData = Array.from({ length: 12 }, (v, i) => ({
     chain : randomFromArray(["SOL", "Blast", "Base Chain"]),
     PresaleType : randomFromRange(1, 2),
     presaleProgress : randomFromRange(1, 2),
+    hot : i+1,
     backgroundImage: require(`../../assets/banner/bg-${(i % 5) + 1}.jpg`), // Adjust if the number of backgrounds is less than 12
     ticker: ["IronMan", "Captain America", "Thor", "Hulk", "Black Widow", "Hawkeye", "Spider-Man", "Doctor Strange", "Ant-Man", "Wasp", "Falcon", "Winter Soldier"][i % 12],
     tickerCode: ["IRON", "CAP", "THOR", "HULK", "BWID", "HAWK", "SPID", "DRST", "ANTM", "WASP", "FALC", "WINT"][i % 12],
