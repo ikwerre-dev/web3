@@ -10,8 +10,8 @@ function Banner() {
       <div className='row'>
         <div className='col-sm-6 banner-left'>
           <div className='banner-text-section'>
-            <h3>Launchpad Protocol that change everything</h3>
-            <p>Introducing Swap, the revolutionary exchange platform that empowers users to seamlessly switch between different blockchain networks with ease and efficiency. With Swap, navigating the complexities of cross-chain transactions has never been simpler.</p>
+            <h3>Dittoswaps: Launchpad Protocol</h3>
+            <p>Join in on the fun with many different networks and Launchpad types to choose from. Feel free to browse new listings from Base, Blast, and Solana Network Chains. Our site hosts 3 types of Launchpad, Free-for-all where you can buy/sell, traditional where it is buy only and lastly private that are partner hosted and invite only.</p>
           </div>
           <div className='banner-action-buttons'>
             <a href='/createtoken' className='btn btn-main'>
