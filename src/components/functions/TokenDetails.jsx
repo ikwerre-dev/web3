@@ -1,6 +1,7 @@
 const data = {
     1: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-1.jpg`),
             name: "IranMan [ticker: IRAN]",
             description: "I am Iron Man",
             progressBarInitial: 20,
@@ -55,6 +56,7 @@ const data = {
     },
     2: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-2.jpg`),
             name: "Captain USA [ticker: CAPT]",
             description: "The First Avenger",
             progressBarInitial: 40,
@@ -109,6 +111,7 @@ const data = {
     },
     3: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-3.jpg`),
             name: "Thor God [ticker: THOR]",
             description: "God of Thunder",
             progressBarInitial: 60,
@@ -163,6 +166,7 @@ const data = {
     },
     4: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-4.jpg`),
             name: "Black Widow [ticker: WIDOW]",
             description: "Stealth and Precision",
             progressBarInitial: 30,
@@ -217,6 +221,7 @@ const data = {
     },
     5: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-5.jpg`),
             name: "Hulk Smash [ticker: HULK]",
             description: "Unleash the Green Goliath",
             progressBarInitial: 10,
@@ -271,6 +276,7 @@ const data = {
     },
     6: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-1.jpg`),
             name: "Hulk Smash [ticker: HULK]",
             description: "Unleash the Green Goliath",
             progressBarInitial: 10,
@@ -325,6 +331,7 @@ const data = {
     },
     7: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-2.jpg`),
             name: "Hulk Smash [ticker: HULK]",
             description: "Unleash the Green Goliath",
             progressBarInitial: 10,
@@ -379,6 +386,7 @@ const data = {
     },
     8: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-3.jpg`),
             name: "Hulk Smash [ticker: HULK]",
             description: "Unleash the Green Goliath",
             progressBarInitial: 10,
@@ -433,6 +441,7 @@ const data = {
     },
     9: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-4.jpg`),
             name: "Hulk Smash [ticker: HULK]",
             description: "Unleash the Green Goliath",
             progressBarInitial: 10,
@@ -487,6 +496,7 @@ const data = {
     },
     10: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-5.jpg`),
             name: "Hulk Smash [ticker: HULK]",
             description: "Unleash the Green Goliath",
             progressBarInitial: 10,
@@ -541,6 +551,7 @@ const data = {
     },
     11: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-1.jpg`),
             name: "Hulk Smash [ticker: HULK]",
             description: "Unleash the Green Goliath",
             progressBarInitial: 10,
@@ -595,6 +606,7 @@ const data = {
     },
     12: {
         projectDetails: {
+            backgroundImage: require(`../../assets/banner/bg-2.jpg`),
             name: "Hulk Smash [ticker: HULK]",
             description: "Unleash the Green Goliath",
             progressBarInitial: 10,

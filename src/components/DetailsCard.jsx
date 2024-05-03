@@ -21,7 +21,7 @@ function DetailsCard({ id }) {
                     <div className='row mb-0'>
                         <div className='col-4 mb-0'>
                             <div className='banner-card-avatar'>
-                                <img src={bannerAvatar} alt='banner card' className='banner-avatar' />
+                                <img src={details.projectDetails.backgroundImage} alt={'banner card'} className='banner-avatar' />
                             </div>
                         </div>
                         <div className='col-8 mb-0'>
