@@ -1,7 +1,7 @@
 .details .scrolling-container {
     width: 100%;
     /* Set to the width you want for your container */
-    overflow-x: auto;
+    overflow-x: hidden!important;
     /* Enables horizontal scrolling */
     white-space: nowrap;
     /* Ensures list items line up horizontally */
