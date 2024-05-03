@@ -2,7 +2,7 @@ const data = {
     1: {
         projectDetails: {
             backgroundImage: require(`../../assets/banner/bg-1.jpg`),
-            name: "IranMan [ticker: IRAN]",
+            name: "IronMan [ticker: IRON]",
             description: "I am Iron Man",
             progressBarInitial: 20,
             amountLabel: "Amount",
