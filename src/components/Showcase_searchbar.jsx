@@ -1,72 +1,63 @@
 import React from 'react';
-import './Showcase'; // Assuming you have a CSS file for styles
-import { List, Grid2X2, } from 'lucide-react';
-import { createPopper } from '@popperjs/core';
+import './Showcase';
+import { List, Grid2X2 } from 'lucide-react';
+import { Dropdown, DropdownButton } from 'react-bootstrap';
+import NetworksOption from './functions/FetchNetworks';
+import PresaleTypeOption from './functions/PresaleType';
+import PresaleProgressOption from './functions/PresaleProgress';
+import PriceOption from './functions/PriceOption';
 
 const ShowcaseSearchbar = () => {
+   
+    const filterShowcase = (type) =>{
+        alert(type);
+    };
+
     return (
         <div className="row mt-5 showcase_searchbar offset-1">
             <div className='col-sm-5'>
                 <input className='form-control shadow-custom' placeholder='Type token symbol, address to find your launchpad' />
             </div>
             <div className='col-sm-12 col-lg-7 menulist'>
-                <div className="btn-group">
-                    <button type="button" className="btn btn-white shadow-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Chains
-                    </button>
-                    <div className="dropdown-menu">
-                        <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a>
-                        <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="#">Separated link</a>
-                    </div>
-                </div>
-                <div className="btn-group">
-                    <button type="button" className="btn btn-white shadow-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Presale Type
-                    </button>
-                    <div className="dropdown-menu">
-                        <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a>
-                        <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="#">Separated link</a>
-                    </div>
-                </div>
-                <div className="btn-group">
-                    <button type="button" className="btn btn-white shadow-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Presale Progress
-                    </button>
-                    <div className="dropdown-menu">
-                        <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a>
-                        <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="#">Separated link</a>
-                    </div>
-                </div>
-                <div className="btn-group">
-                    <button type="button" className="btn btn-white shadow-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Price low to high
-                    </button>
-                    <div className="dropdown-menu">
-                        <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a>
-                        <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="#">Separated link</a>
-                    </div>
-                </div>
-                <div className="btn-group">
-                    <button type="button" className="btn btn-white last-btn shadow-custom">
-                        <Grid2X2 />
-                        <List />                    </button>
-                </div>
+                <Dropdown as={DropdownButton} title="Chains" variant="white shadow-custom">
+                    {NetworksOption.map((network, index) => (
+                        <Dropdown.Item key={index} onClick={() => filterShowcase(network.value)}>
+                        {network.label}
+                        </Dropdown.Item>
+                    ))}
+                </Dropdown>
 
+                <Dropdown as={DropdownButton} title="Presale Type" variant="white shadow-custom" className="btn-group">
+                    {PresaleTypeOption.map((type, index) => (
+                        <Dropdown.Item key={index} onClick={() => filterShowcase(type.label)}>
+                            {type.label}
+                        </Dropdown.Item>
+                    ))}
+                </Dropdown>
+
+                <Dropdown as={DropdownButton} title="Presale Progress" variant="white shadow-custom" className="btn-group">
+                    {PresaleProgressOption.map((progress, index) => (
+                        <Dropdown.Item key={index} onClick={() => filterShowcase(progress.label)}>
+                            {progress.label}
+                        </Dropdown.Item>
+                    ))}
+                </Dropdown>
+
+                <Dropdown as={DropdownButton} title="Price low to high" variant="white shadow-custom" className="btn-group">
+                    {PriceOption.map((price, index) => (
+                        <Dropdown.Item key={index} onClick={() => filterShowcase(price.label)}>
+                            {price.label}
+                        </Dropdown.Item>
+                    ))}
+                </Dropdown>
+
+                <button type="button" className="btn btn-white last-btn shadow-custom">
+                    <Grid2X2 />
+                    <List />
+                </button>
             </div>
-
         </div>
+
     );
 };
 

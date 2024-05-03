@@ -3,6 +3,7 @@ import TextInput from './TextInput';
 import FileInput from './FileInput';
 import SelectInput from './SelectInput';
 import TextArea from './TextArea';
+import Networks from './functions/FetchNetworks'
 
 function CreateTokenForm() {
     const [tokenData, setTokenData] = useState({
@@ -26,12 +27,7 @@ function CreateTokenForm() {
         setTokenData({ ...tokenData, image: e.target.files[0] });
     };
 
-    const networks = [
-        { label: 'Solana Mainnet', value: 'SOL' },
-        { label: 'Blast', value: 'Blast' },
-        { label: 'Base Chain', value: 'BaseChain' },
-        // Add more network options here
-    ];
+  
 
     return (
         <div>
@@ -72,7 +68,7 @@ function CreateTokenForm() {
                                 <SelectInput
                                     required={1}
                                     label="Network"
-                                    options={networks}
+                                    options={Networks}
                                     value={tokenData.network}
                                     onChange={handleInputChange}
                                     name="network"

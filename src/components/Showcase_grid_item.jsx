@@ -5,6 +5,9 @@ import CountdownTimer from './functions/CountdownTimer'
 
 const ShowcaseGridItem = ({
     id,
+    chain,
+    PresaleType,
+    presaleProgress,
     backgroundImage,
     ticker,
     tickerCode,
@@ -17,7 +20,7 @@ const ShowcaseGridItem = ({
     onClickView
 }) => {
     return (
-        <div className="col-sm-4 mb-3">
+        <div className="col-sm-4 mb-3 showcase-filter" data-chain={chain} data-presaleType={PresaleType} data-presaleProgress={presaleProgress}>
             <div className="col-sm-12 showcase_card shadow pt-3 px-4 pb-1">
                 <div className='row'>
                     <div className='col-12 topbg-bar' style={{
