@@ -30,6 +30,7 @@ const showcase_grid_item = () => {
                     onClickView={() => alert(`${item.ticker} Viewed`)}
                 />
             ))}
+            <div class=" no-records text-center pink">No record found</div>
         </div>
     );
 };

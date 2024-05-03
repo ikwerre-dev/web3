@@ -2,7 +2,7 @@
 const networks = [
     { label: 'Solana Mainnet', value: 'SOL' },
     { label: 'Blast', value: 'Blast' },
-    { label: 'Base Chain', value: 'BaseChain' },
+    { label: 'Base Chain', value: 'Base Chain' },
     // Add more network options here
 ];
 

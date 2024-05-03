@@ -1,7 +1,6 @@
 const PresaleProgress = [
-    { label: 'Mid', value: '1' },
-    { label: 'High', value: '2' },
-    { label: 'Low', value: '3' },
+    { label: 'Low to High', value: '1' },
+    { label: 'High to Low', value: '2' },
 ]
 
 export default PresaleProgress; 

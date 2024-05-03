@@ -55,3 +55,7 @@ border-radius: 2px;
     flex-direction: column;
     justify-content: space-between; /* Distributes space evenly */
 }
+
+.no-records{
+    display: none;
+}
