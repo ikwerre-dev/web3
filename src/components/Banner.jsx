@@ -1,7 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import Banner_card from './Banner_card';
-import HeaderButton from './HeaderButton';
+import BannerCard from './Banner_card';
 
 
 
@@ -26,7 +25,7 @@ function Banner() {
         </div>
         <div className='col-sm-2'></div>
         <div className='col-sm-4 banner-right'>
-          <Banner_card />
+          <BannerCard />
         </div>
       </div>
     </div>

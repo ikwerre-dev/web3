@@ -3,10 +3,10 @@ import './Footer.css';
 import logo from '../assets/logo.png';
 import usFlag from '../assets/us-flag.png';
 import cnFlag from '../assets/cn-flag.png';
-import { FaTelegramPlane, FacebookIcon } from 'react-icons/fa';
+import { FaTelegramPlane } from 'react-icons/fa';
 import { AiOutlineFacebook } from 'react-icons/ai';
 import { FaXTwitter } from 'react-icons/fa6';
-import { PiMoon, PiSunLight } from 'react-icons/pi';
+// import { PiMoon, PiSunLight } from 'react-icons/pi';
 import ModeSwitcher from './ModeSwitcher';
 
 function Footer() {
@@ -17,23 +17,23 @@ function Footer() {
                 <div className="row offset-1">
                     <div className="col-sm-3">
                         <h6 className='fw-bold'>
-                            <img src={logo} alt="" className="logo" />
+                            <img src={logo} alt="logo" className="logo" />
                         </h6>
                     </div>
                     <div className="col-sm-3">
                         <h6 className=''>LANGUAGE</h6>
                         <div className="d-flex flags gap-1">
-                            <img src={usFlag} alt="" />
-                            <img src={cnFlag} alt="" />
+                            <img src={usFlag} alt="language" />
+                            <img src={cnFlag} alt="language" />
 
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <h6 className=''>FOLLOW US</h6>
                         <div className="d-flex flags gap-3 text-center">
-                            <a href="#"> <FaTelegramPlane size={18} color='#0088CC' /></a>
-                            <a href="#"><FaXTwitter className='twitter' size={18} /></a>          
-                            <a href="#"><AiOutlineFacebook size={20} color='#1877F2' /></a>
+                            <a href="https://telegram.com/"> <FaTelegramPlane size={18} color='#0088CC' /></a>
+                            <a href="https://x.com/"><FaXTwitter className='twitter' size={18} /></a>          
+                            <a href="https://facebook.com/"><AiOutlineFacebook size={20} color='#1877F2' /></a>
 
                         </div>
                     </div>

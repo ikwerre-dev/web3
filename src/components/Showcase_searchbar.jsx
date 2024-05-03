@@ -1,8 +1,9 @@
 import React from 'react';
 import './Showcase'; // Assuming you have a CSS file for styles
 import { List, Grid2X2, } from 'lucide-react';
+import { createPopper } from '@popperjs/core';
 
-const showcase_searchbar = () => {
+const ShowcaseSearchbar = () => {
     return (
         <div className="row mt-5 showcase_searchbar offset-1">
             <div className='col-sm-5'>
@@ -69,4 +70,4 @@ const showcase_searchbar = () => {
     );
 };
 
-export default showcase_searchbar;
+export default ShowcaseSearchbar;

@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState, memo } from 'react';
 function TradingViewWidget() {
     const container = useRef();
     const scriptAdded = useRef(false);
-    var [theme, setTheme] = useState('light'); // State to manage theme
+    var [theme] = useState('light'); // State to manage theme
 
     useEffect(() => {
         // Check for the 'dark' class on #main-body

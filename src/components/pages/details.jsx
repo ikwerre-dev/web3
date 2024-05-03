@@ -1,9 +1,7 @@
 import React from 'react';
 import '../../App.css'
 import '../Details.css'
-import Header from '../Header';   
-import Banner from '../Banner';   
-import Showcase from '../Showcase';   
+import Header from '../Header';    
 import ScrollingList from '../scrollingList';   
 import Footer from '../Footer';   
 import TradingViewWidget from '../TradingViewWidget';

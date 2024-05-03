@@ -2,7 +2,6 @@ import React from 'react';
 import './Header.css';
 import ModeSwitcher from './ModeSwitcher'; // adjust the path according to your file structure
 import logo from '../assets/logo.png';
-import { SunDim } from 'lucide-react';
 import HeaderButton from './HeaderButton';
 
 function Header() {
@@ -26,12 +25,12 @@ function Header() {
             <div className='nav'>
                 <ul>
                     <li>
-                        <a href='#'>
+                        <a href='https://telegram.com/'>
                             Telegram
                         </a>
                     </li>
                     <li>
-                        <a href='#'>
+                        <a href='https://telegram.com/'>
                             Support
                         </a>
                     </li>

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 import '../Comment.css'
-import { HeartIcon, ReplyIcon, SendIcon } from 'lucide-react';
+import { HeartIcon, SendIcon } from 'lucide-react';
 import moment from 'moment';
 
 function formatDate(dateString) {

@@ -2,7 +2,7 @@ import React from 'react';
 import { useDropzone } from 'react-dropzone';
 import './dropzone.css';
 import { UploadIcon } from 'lucide-react';
-function FileInput({ label }) {
+function FileInput({ required, label }) {
     const onDrop = React.useCallback(acceptedFiles => {
         // Do something with the files
         console.log(acceptedFiles);
@@ -12,9 +12,9 @@ function FileInput({ label }) {
 
     return (
         <div className="form-group">
-            {label && <label>{label}</label>}
+            {label && <label>{label} {required === 1 ? <span className='pink'>*</span> : ''}</label>}
             <div {...getRootProps()} className={`cursor-pointer dropzone ${isDragActive ? 'active' : ''}`}>
-                <input {...getInputProps()} />
+                <input {...getInputProps()}  />
                 {
                     isDragActive ?
                     <p>Drop image</p> :

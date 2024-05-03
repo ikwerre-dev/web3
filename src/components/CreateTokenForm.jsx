@@ -27,7 +27,9 @@ function CreateTokenForm() {
     };
 
     const networks = [
-        { label: 'SOL', value: 'SOL' },
+        { label: 'Solana Mainnet', value: 'SOL' },
+        { label: 'Blast', value: 'Blast' },
+        { label: 'Base Chain', value: 'BaseChain' },
         // Add more network options here
     ];
 
@@ -40,6 +42,7 @@ function CreateTokenForm() {
                         <div className="row">
                             <div className='col-12 mt-3'>
                                 <TextInput
+                                    required={1}
                                     label="Name"
                                     value={tokenData.name}
                                     onChange={handleInputChange}
@@ -48,6 +51,7 @@ function CreateTokenForm() {
                                 />
                             </div><div className='col-12 mt-3'>
                                 <TextInput
+                                    required={1}
                                     label="Decimals"
                                     value={tokenData.decimals}
                                     onChange={handleInputChange}
@@ -56,6 +60,7 @@ function CreateTokenForm() {
                                 />
                             </div><div className='col-12 mt-3'>
                                 <TextInput
+                                    required={1}
                                     label="Supply"
                                     value={tokenData.supply}
                                     onChange={handleInputChange}
@@ -65,6 +70,7 @@ function CreateTokenForm() {
                             </div>
                             <div className='col-12 mt-3'>
                                 <SelectInput
+                                    required={1}
                                     label="Network"
                                     options={networks}
                                     value={tokenData.network}
@@ -80,6 +86,7 @@ function CreateTokenForm() {
                             <div className='col-12 mt-3'>
 
                                 <TextInput
+                                    required={1}
                                     label="Symbol"
                                     value={tokenData.symbol}
                                     onChange={handleInputChange}
@@ -89,6 +96,7 @@ function CreateTokenForm() {
                             </div>
                             <div className='col-12 mt-3'>
                                 <TextArea
+                                    required={1}
                                     label="Description"
                                     value={tokenData.description}
                                     onChange={handleInputChange}
@@ -101,6 +109,7 @@ function CreateTokenForm() {
 
                     <div className='col-12 mt-3'>
                         <FileInput
+                            required={1}
                             label="Image"
                             onChange={handleFileChange}
                         />

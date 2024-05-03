@@ -21,7 +21,7 @@ function DetailsCard({ id }) {
                     <div className='row mb-0'>
                         <div className='col-4 mb-0'>
                             <div className='banner-card-avatar'>
-                                <img src={bannerAvatar} className='banner-avatar' />
+                                <img src={bannerAvatar} alt='banner card' className='banner-avatar' />
                             </div>
                         </div>
                         <div className='col-8 mb-0'>
@@ -38,8 +38,8 @@ function DetailsCard({ id }) {
                     <div className="d-flex justify-content-between align-items-end">
                         <h6>{details.projectDetails.amountLabel}</h6>
                         <div className='d-flex gap-1'>
-                            <a href='#' className='btn btn-main mt-1 btn-sm'>{details.projectDetails.buyLabel}</a>
-                            <a href='#' className='btn btn-secondary mt-1 btn-sm'>{details.projectDetails.sellLabel}</a>
+                            <a href='/' className='btn btn-main mt-1 btn-sm'>{details.projectDetails.buyLabel}</a>
+                            <a href='/' className='btn btn-secondary mt-1 btn-sm'>{details.projectDetails.sellLabel}</a>
                         </div>
                     </div>
                     <input type="number" name="" className='mt-2 form-control bordered' id="" />

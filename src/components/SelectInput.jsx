@@ -1,10 +1,10 @@
 import React from 'react';
 
-function SelectInput({ label, options, value, onChange }) {
+function SelectInput({ required, select, label, options, value, onChange }) {
     return (
         <div className="form-group">
-            {label && <label>{label}</label>}
-            <select className="form-control" value={value} onChange={onChange}>
+            {label && <label>{label} {required === 1 ? <span className='pink'>*</span> : ''}</label>}
+            <select className="form-control" {...(required === 1 ? { required: true } : {})} value={value} onChange={onChange}>
                 {options.map(option => (
                     <option key={option.value} value={option.value}>
                         {option.label}

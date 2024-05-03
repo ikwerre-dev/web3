@@ -1,7 +1,7 @@
 import React from 'react';
 import './Showcase.css';
-import Showcase_searchbar from './Showcase_searchbar';   
-import Showcase_grid from './Showcase_grid';   
+import ShowcaseSearchbar from './Showcase_searchbar';   
+import ShowcaseGrid from './Showcase_grid';   
 
 
 function showcase() {
@@ -9,8 +9,8 @@ function showcase() {
         <div className="showcase  mt-3">
             <div className='row'>
                 <div className='col-11'>
-                    <Showcase_searchbar />
-                    <Showcase_grid />
+                    <ShowcaseSearchbar />
+                    <ShowcaseGrid />
                 </div>
             </div>
 

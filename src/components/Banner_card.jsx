@@ -4,7 +4,7 @@ import solana from '../assets/solana.png';
 import bannerAvatar from '../assets/banner-avatar.png';
 
 
-function Banner_card() {
+function BannerCard() {
   return (
    <div className='row'>
     <div className='col-12 '>
@@ -12,8 +12,8 @@ function Banner_card() {
       <div className='row'>
         <div className='col-8'>
             <div className='banner-card-avatar'>
-                <img src={bannerAvatar} className='banner-avatar' />
-                <img src={solana} className='banner-addon' />
+                <img src={bannerAvatar} alt='banner' className='banner-avatar' />
+                <img src={solana} alt='banner' className='banner-addon' />
             </div>
         </div>
         <div className='col-4'>
@@ -52,4 +52,4 @@ function Banner_card() {
   );
 }
 
-export default Banner_card;
+export default BannerCard;
